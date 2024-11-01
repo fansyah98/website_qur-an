@@ -94,89 +94,12 @@ body {
     <script src="./js/jquery/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/tema.js"></script>
+    <script src="./js/sholat.js"></script>
 </body>
 
 </html>
-
 <script>
-    // Ganti dengan latitude dan longitude Anda
-    const latitude = '-6.200000';  
-    const longitude = '106.816666'; 
-
-    fetch(`http://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}`)
-        .then(response => response.json())
-        .then(data => {
-            const timings = data.data.timings;
-            const prayerTimesDiv = document.getElementById('prayer-times');
-            prayerTimesDiv.innerHTML = `
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sholat Fajat</h5>
-                            <p class="time">${timings.Fajr}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sholat Dhuzur</h5>
-                            <p class="time">${timings.Dhuhr}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sholat Ahzar</h5>
-                            <p class="time">${timings.Asr}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Shloat Magrib</h5>
-                            <p class="time">${timings.Maghrib}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sholat Isya</h5>
-                            <p class="time">${timings.Isha}</p>
-                        </div>
-                    </div>
-                </div>
-            `;
-        })
-        .catch(error => console.error('Error fetching prayer times:', error));
 </script>
 
 
-<script>
-    const themeToggleCheckbox = document.getElementById('theme-toggle');
-    const navbar = document.getElementById('navbar');
-    const body = document.body;
-
-    themeToggleCheckbox.addEventListener('change', () => {
-        body.classList.toggle('dark-mode');
-        navbar.classList.toggle('dark-mode');
-        
-        // Save the theme preference in localStorage
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
-        } else {
-            localStorage.setItem('theme', 'light');
-        }
-    });
-
-    // Check for saved user preference on page load
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        body.classList.add('dark-mode');
-        navbar.classList.add('dark-mode');
-        themeToggleCheckbox.checked = true; // Set checkbox to checked if dark mode is active
-    }
-</script>
