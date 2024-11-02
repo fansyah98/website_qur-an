@@ -24,7 +24,7 @@ if(datax==1){
                 htA+='<div class="mb-2">';
                 htA+='<div class="col justify-content-center text-end"><div class="arab" lang="ar" style="font-size:25px;" >'+
                     ayat +'</div></div>';
-                htA+='<div class="col justify-content-center text-start px-3 mb-2">'+ ayat_text +'</div>';
+                htA+='<div class="col justify-content-center text-start px-3 mb-2 fw-bold">'+ ayat_text +'</div>';
                 htA+='<div class="col justify-content-center text-start px-3 mb-2"><cite>'+'"'+ arti_ayat + '"' +'</cite></div>';
                 htA+='</div>';
                 htA+='<hr class="bg-light border-1 border-top border-dark">';
