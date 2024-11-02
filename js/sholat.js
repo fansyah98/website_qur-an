@@ -2,7 +2,7 @@
 const latitude = '-6.200000';  
 const longitude = '106.816666'; 
 
-fetch(`http://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}`)
+fetch(`https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}`)
     .then(response => response.json())
     .then(data => {
         const timings = data.data.timings;
