@@ -19,63 +19,12 @@
     <link rel="icon" type="image/png" sizes="256x256" href="./assets/image/icon-256x256.png">
     <link rel="icon" type="image/png" sizes="512x512" href="./assets/image/icon-512x512.png">
 
+
     <title>Al-Qur'an Digital Indonesia</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
-    <style>
-        body.dark-mode {
-            background-color: #121212; /* Latar belakang gelap */
-            color: #e0e0e0; /* Teks abu-abu terang untuk kontras yang lebih baik */
-        }
-    
-        .navbar.dark-mode {
-            background-color: #1c1c1c; /* Latar belakang navbar gelap */
-            color: #e0e0e0; /* Teks navbar abu-abu terang */
-        }
-    
-        .navbar.dark-mode .nav-link {
-            color: #ffffff; /* Teks putih untuk link navbar */
-        }
-    
-        .navbar.dark-mode .nav-link:hover {
-            color: #ffcc00; /* Warna cerah untuk efek hover */
-        }
-    
-        body {
-            background-color: #ffffff; /* Latar belakang terang */
-            color: #333; /* Teks gelap untuk mode terang */
-        }
-    
-        .navbar {
-            background-color: #f8f9fa; /* Latar belakang navbar terang */
-            color: #333; /* Teks navbar gelap */
-        }
-    
-        .navbar .nav-link {
-            color: #333; /* Teks gelap untuk link navbar */
-        }
-    
-        .navbar .nav-link:hover {
-            color: #0056b3; /* Warna hover untuk mode terang */
-        }
-    
-        /* Penambahan untuk mode gelap */
-        body.dark-mode {
-            color: #ffffff; /* Ubah teks menjadi putih di mode gelap */
-        }
-    
-        /* Untuk lebih menonjolkan teks */
-        body.dark-mode .card {
-            background-color: #1e1e1e; /* Warna latar belakang kartu gelap */
-            border-color: #444; /* Warna border kartu lebih gelap */
-        }
-    
-        body.dark-mode .card-title,
-        body.dark-mode .time {
-            color: #ffffff; /* Ubah teks dalam kartu menjadi putih */
-        }
-    </style>
-    
+    <link rel="stylesheet" href="./assets/css/private.css">
+
 </head>
 
 <body>
@@ -96,9 +45,6 @@
                 <a class="nav-link" href="surat.html">Baca Al Qur'an</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="waktu-sholat.html">Waktu Sholat Hari Ini</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="kalender-sholat.html">kalender</a>
               </li>
               <li class="nav-item">
@@ -115,15 +61,50 @@
     <div class="container mb-4">
         <div class="row mb-2">
             <div class="col-12">
-                <h1 class="text-center">Waktu Sholat</h1>
-                <div class="row text-center" id="prayer-times">
-
-                </div>
-
+                <h5 class="text-center mt-4 mb-4">DAFTAR SURAT</h5>
             </div>
         </div>
-   
+        <div class="row g-mb-30">
+            <div class="col-lg-4 g-mb-40 g-mb-0--lg">
+                <ul class="list-unstyled mb-0 divA">
+
+                </ul>
+            </div>
+
+            <div class="col-lg-4 g-mb-40 g-mb-0--lg">
+                <ul class="list-unstyled mb-0 divB">
+
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <ul class="list-unstyled mb-0 divC">
+
+                </ul>
+            </div>
+        </div>
     </div>
+
+          <!-- Tombol Navigasi di Bawah -->
+    <div class="fixed-bottom d-lg-none">
+      <div class="container">
+          <div class="row g-0">
+              <div class="col">
+                  <a href="index.html" class="btn btn-primary w-100 no-border-radius">Home</a>
+              </div>
+              <div class="col">
+                  <a href="surat.html" class="btn btn-primary w-100 no-border-radius">Qur'an</a>
+              </div>
+              <div class="col">
+                  <a href="kalender-sholat.html" class="btn btn-primary w-100 no-border-radius">Kalender</a>
+              </div>
+              <div class="col">
+                <a href="surat.html" class="btn btn-primary w-100 no-border-radius">Doa</a>
+            </div>
+          </div>
+      </div>
+  </div>
+      
     <div class="container-fluid">
         <footer class="text-center mb-4"><span>Made with &hearts; by Fansyah Dwi Krisnady</span></footer>
     </div>
@@ -131,11 +112,8 @@
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/tema.js"></script>
-    <script src="./js/sholat.js"></script>
+    <script src="./js/surah.js"></script>
+
 </body>
 
 </html>
-<script>
-</script>
-
-
