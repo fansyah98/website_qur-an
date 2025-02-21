@@ -3,9 +3,8 @@ import ErrorCard from '../../components/ErrorCards';
 import Layout from '../../components/Layouts';
 import Loading from '../../components/Loading';
 import DoaCard from '../../components/doa/DoaCard';
-import { fetchDoaList } from '../../utils/doa';
 
-export default function DoaHarian() {
+export default function HusnaCard() {
   const [doas, setDoas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -31,11 +30,11 @@ export default function DoaHarian() {
 
   return (
     <Layout name="Doa Harian">
-      <h1 className="text-3xl font-bold text-green-500 mb-3">Doa Harian</h1>
+      <h1 className="text-3xl font-bold text-green-300 mb-3">Asmaul Husna</h1>
 
       {loading && <Loading message="Memuat doa harian..." />}
       {error && (
-        <ErrorCard message="Gagal memuat data, silakan periksa koneksi internet Anda lalu refresh halaman ini." />
+        <ErrorCard message="Gagal memuat data, Halaman Sedang di perbaiki." />
       )}
 
       {doas && doas.length > 0 ? (
@@ -45,7 +44,7 @@ export default function DoaHarian() {
           ))}
         </div>
       ) : (
-        <p className="text-center text-lg text-gray-500">Tidak ada doa yang ditemukan.</p>
+        <p className="text-center text-lg text-gray-500">Tidak ada Asmaul Husna yang ditemukan.</p>
       )}
     </Layout>
   );

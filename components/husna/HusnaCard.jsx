@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function DoaCard({ doa }) {
+export default function HusnaCard({ doa }) {
   const { nama, judul, arab, indo, source } = doa;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -23,15 +23,16 @@ export default function DoaCard({ doa }) {
                 <h2 className="text-lg md:text-xl font-bold text-green-400">{judul}</h2>
               </div>
             </div>
-
-           
           </div>
           <div className="text-right flex justify-between px-3 pb-3">
-       
-            <div className="hover:text-green-500">
-          
-              <div className="" title="Lihat Tafsir"
-                onClick={handleOpenModal}>Detail</div>
+            <div className="hover:green-rose-500">
+              <div
+                className=""
+                title="Lihat Tafsir"
+                onClick={handleOpenModal}
+              >
+                Detail
+              </div>
             </div>
           </div>
         </div>
@@ -51,16 +52,8 @@ export default function DoaCard({ doa }) {
               </button>
             </div>
             <div className="mt-4 text-sm">
-              <p className="text-md font-bold">Arabic:</p>
-              <p className="text-lg">{arab}</p>
-            </div>
-            <div className="mt-4 text-sm">
-              <p className="text-md font-bold">Artinya:</p>
-              <p className="text-lg">{indo}</p>
-            </div>
-            <div className="mt-4 text-sm">
-              <p className="text-md font-bold">Jenis Doa:</p>
-              <p className="text-lg">{source}</p>
+              <p className="text-md font-bold">Menu ini sedang disiapkan</p>
+              <p className="text-lg">Mohon bersabar, kami sedang mempersiapkan informasi lebih lanjut.</p>
             </div>
           </div>
         </div>

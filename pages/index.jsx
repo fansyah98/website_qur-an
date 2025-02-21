@@ -122,7 +122,7 @@ export default function JadwalSolatHariIni() {
 
   return (
     <Layout name="Jadwal Sholat">
-      <h1 className="text-3xl font-bold text-rose-500 mb-3">Jadwal Sholat</h1>
+      <h1 className="text-3xl font-bold text-blue-500 mb-3">Jadwal Sholat</h1>
 
       {loading && <Loading message="Memuat jadwal sholat..." />}
       {error && (
@@ -134,14 +134,14 @@ export default function JadwalSolatHariIni() {
           displayMap ? 'visible' : 'invisible'
         }`}
       >
-        <h2 className="text-lg font-bold text-rose-500">Atur Lokasi</h2>
+        <h2 className="text-lg font-bold text-blue-500">Atur Lokasi</h2>
         <p>Silakan klik lokasi pada map untuk mengganti lokasi.</p>
 
         <Tracker callback={(coords) => setCoordinates(coords)} />
 
         <button
           onClick={() => setDisplayMap(!displayMap)}
-          className="px-3 py-2 rounded-lg bg-rose-500 text-rose-50"
+          className="px-3 py-2 rounded-lg bg-blue-500 text-rose-50"
         >
           Simpan
         </button>
@@ -154,7 +154,7 @@ export default function JadwalSolatHariIni() {
               <p>Berikut jadwal sholat hari ini.</p>
               <button
                 onClick={() => setDisplayMap(!displayMap)}
-                className="px-3 py-2 mt-3 rounded-lg bg-rose-500 text-rose-50"
+                className="px-3 py-2 mt-3 rounded-lg bg-blue-500 text-rose-50"
                 title="Klik untuk mengatur lokasi sesuai keinginan"
               >
                 Atur lokasi

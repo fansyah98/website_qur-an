@@ -31,7 +31,7 @@ export default function LastReadCard() {
         <div className="text-right">
           <Link
             href={lastRead.link}
-            className="inline-block py-2 text-center px-3 rounded bg-rose-300 text-white hover:bg-rose-500 duration-300"
+            className="inline-block py-2 text-center px-3 rounded bg-green-300 text-white hover:bg-green-500 duration-300"
           >
             Lanjutkan
           </Link>

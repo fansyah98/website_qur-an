@@ -67,7 +67,7 @@ export default function Surah({ data }) {
             <h1 className="text-2xl font-bold font-serif mb-3">
               <span className="font-mushaf">{surah.name.short}</span>
             </h1>
-            <h2 className="text-xl font-bold text-rose-500">
+            <h2 className="text-xl font-bold text-green-500">
               {surah.name.transliteration.id}{' '}
             </h2>
             <h3 className="text-lg font-semibold">
@@ -79,8 +79,8 @@ export default function Surah({ data }) {
           <div className="flex flex-wrap justify-center py-4 bg-white text-sm sticky top-0 z-10">
             {/* Tafsir button */}
             <div
-              className={`cursor-pointer duration-300 hover:text-rose-500 ${
-                displayTafsir ? 'text-rose-500' : 'text-slate-500 '
+              className={`cursor-pointer duration-300 hover:text-green-500 ${
+                displayTafsir ? 'text-green-500' : 'text-slate-500 '
               }`}
               onClick={() => setOption({ displayTafsir: !displayTafsir })}
               title="Klik untuk menampilkan tafsir surah ini."
@@ -104,8 +104,8 @@ export default function Surah({ data }) {
 
             {/* Translate button */}
             <div
-              className={`cursor-pointer duration-300 hover:text-rose-500 ${
-                displayTranslate ? 'text-rose-500' : 'text-slate-500 '
+              className={`cursor-pointer duration-300 hover:text-green-500 ${
+                displayTranslate ? 'text-green-500' : 'text-slate-500 '
               }`}
               onClick={() => setOption({ displayTranslate: !displayTranslate })}
               title="Klik untuk menampilkan terjemahan masing-masing ayat."
@@ -129,8 +129,8 @@ export default function Surah({ data }) {
 
             {/* Audio button */}
             <div
-              className={`cursor-pointer duration-300 hover:text-rose-500 ${
-                displayAudio ? 'text-rose-500' : 'text-slate-500 '
+              className={`cursor-pointer duration-300 hover:text-green-500 ${
+                displayAudio ? 'text-green-500' : 'text-slate-500 '
               }`}
               onClick={() => setOption({ displayAudio: !displayAudio })}
               title="Klik untuk menampilkan audio masing-masing ayat."
@@ -154,8 +154,8 @@ export default function Surah({ data }) {
 
             {/* Latin button */}
             <div
-              className={`cursor-pointer duration-300 hover:text-rose-500 ${
-                displayLatin ? 'text-rose-500' : 'text-slate-500 '
+              className={`cursor-pointer duration-300 hover:text-green-500 ${
+                displayLatin ? 'text-green-500' : 'text-slate-500 '
               }`}
               onClick={() => setOption({ displayLatin: !displayLatin })}
               title="Klik untuk menampilkan bacaan latin masing-masing ayat."
@@ -181,7 +181,7 @@ export default function Surah({ data }) {
           {/* Navigation */}
           <div className="flex flex-wrap justify-between mb-5">
             {/* Previous */}
-            <div className="flex items-center hover:text-rose-500 duration-300">
+            <div className="flex items-center hover:text-green-500 duration-300">
               {surah.number > 1 && (
                 <button
                   title="Kembali ke surah sebelumnya."
@@ -205,7 +205,7 @@ export default function Surah({ data }) {
             </div>
 
             {/* Next */}
-            <div className="flex items-center text-right hover:text-rose-500 duration-300">
+            <div className="flex items-center text-right hover:text-green-500 duration-300">
               <button
                 title="Beralih ke surah selanjutnya."
                 onClick={() => changeSurah(surah.number + 1)}
@@ -251,7 +251,7 @@ export default function Surah({ data }) {
           {/* Navigation */}
           <div className="flex justify-between mt-3">
             {/* Previous */}
-            <div className="flex items-center hover:text-rose-500 duration-300">
+            <div className="flex items-center hover:text-green-500 duration-300">
               {surah.number > 1 && (
                 <button
                   title="Kembali ke surah sebelumnya."
@@ -275,7 +275,7 @@ export default function Surah({ data }) {
             </div>
 
             {/* Next */}
-            <div className="flex items-center text-right hover:text-rose-500 duration-300">
+            <div className="flex items-center text-right hover:text-green-500 duration-300">
               <button
                 title="Beralih ke surah selanjutnya."
                 onClick={() => changeSurah(surah.number + 1)}
@@ -310,11 +310,11 @@ export default function Surah({ data }) {
           >
             <div>
               {/* Head */}
-              <div className="p-3 rounded-t-lg bg-rose-500 text-rose-50 relative">
+              <div className="p-3 rounded-t-lg bg-green-500 text-green-50 relative">
                 <div className="absolute top-0 right-0 p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 cursor-pointer hover:fill-rose-50 hover:stroke-rose-500"
+                    className="h-6 w-6 cursor-pointer hover:fill-green-50 hover:stroke-green-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

@@ -5,7 +5,7 @@ export default function JadwalSholatCard({ sholat }) {
 
   return (
     <div
-      className={`rounded-lg shadow bg-rose-50 ${border} text-rose-500 flex justify-between items-center p-4`}
+      className={`rounded-lg shadow bg-rose-50 ${border} text-green-500 flex justify-between items-center p-4`}
     >
       <div className="text-lg">{name}</div>
       <div className="font-bold flex items-center">
