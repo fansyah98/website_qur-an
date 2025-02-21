@@ -55,9 +55,7 @@ export default function Surah({ data }) {
       name={`Qur'an Surah ke-${data.number} - ${data.name.transliteration.id} (${data.name.translation.id})`}
     >
       {loading && <Loading message="Memuat semua ayat..." />}
-      {error && (
-        <ErrorCard message="Gagal memuat data, silakan periksa koneksi internet Anda lalu refresh halaman ini." />
-      )}
+      
 
       {surah && (
         <>
