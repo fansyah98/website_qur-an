@@ -1,7 +1,7 @@
 // utils/doa.js
 export const fetchDoaList = async () => {
     try {
-      const response = await fetch('https://api.myquran.com/v2/doa/acak'); // Correct API endpoint for Doa list
+      const response = await fetch('https://api.myquran.com/v2/doa/sumber/harian'); // Correct API endpoint for Doa list
       if (!response.ok) {
         throw new Error('Failed to fetch doa list');
       }
