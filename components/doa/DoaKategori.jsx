@@ -1,10 +1,9 @@
-// components/doa/DoaKategori.jsx
 
 const DoaKategori = ({ handleClickKategori }) => {
   const categories = [
-    { name: 'Doa Harian', id: 'doa harian' },
-    { name: 'Doa Haji', id: 'doa haji' },
-    { name: 'Doa Qur\'an', id: 'doa quran' },
+    { name: 'Doa Harian', id: 'doa-harian' },
+    { name: 'Doa Haji', id: 'doa-haji' },
+    { name: 'Doa Qur\'an', id: 'doa-quran' },
   ];
 
   return (
