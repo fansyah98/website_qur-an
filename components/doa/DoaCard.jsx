@@ -26,9 +26,9 @@ export default function DoaCard({ doa }) {
 
            
           </div>
-          <div className="text-right flex justify-between px-3 pb-3">
+          <div className="text-sm mt-1 flex justify-between px-3 pb-3">
        
-            <div className="hover:text-green-500">
+            <div className="hover:text-rose-500">
           
               <div className="" title="Lihat Tafsir"
                 onClick={handleOpenModal}>Detail</div>
@@ -42,7 +42,7 @@ export default function DoaCard({ doa }) {
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
           <div className="bg-white rounded-xl w-96 p-6">
             <div className="flex justify-between items-center">
-              <h3 className="text-2xl font-semibold text-green-400">{judul}</h3>
+              <h3 className="text-2xl font-semibold text-rose-400">{judul}</h3>
               <button
                 className="text-xl text-gray-500 hover:text-rose-500"
                 onClick={handleCloseModal}

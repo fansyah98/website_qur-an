@@ -5,7 +5,7 @@ import Footer from './Footer'
 import BottomNavigation from './BottomNavigation'
 
 export default function Layout({ children, name }) {
-  const title = `Islamiah - ${name}`
+  const title = `Al Qur'an Digital - ${name}`
 
   return (
     <div className="w-full mx-auto">
