@@ -31,7 +31,7 @@ export default function DoaHarian() {
 
   return (
     <Layout name="Doa Harian">
-      <h1 className="text-3xl font-bold text-green-500 mb-3">Doa Harian</h1>
+      <h1 className="text-3xl font-bold text-green-500 mb-3">Nama Asmaul Husna</h1>
 
       {loading && <Loading message="Memuat doa harian..." />}
       {error && (
