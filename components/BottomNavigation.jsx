@@ -142,7 +142,7 @@ export default function BottomNavigation() {
         <Link
           href={url}
           key={i}
-          className={url === active ? 'pt-2 pb-1 bg-yellow-400' : 'pt-2 pb-1'}
+          className={url === active ? 'pt-2 pb-1 bg-blue-100' : 'pt-2 pb-1'}
         >
           {icon}
           <span className="text-sm">{name}</span>
