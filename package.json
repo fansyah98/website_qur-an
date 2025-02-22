@@ -16,6 +16,7 @@
     "caniuse-lite": "^1.0.30001462",
     "copy-to-clipboard": "^3.3.3",
     "next": "13.2.3",
+    "next-ga": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zustand": "^4.3.6"
