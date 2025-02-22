@@ -24,7 +24,7 @@ const navs = [
     ),
   },
   {
-    name: "Doa Harian",
+    name: "Doa-Doa",
     url: '/doa',
     icon: (
       <svg

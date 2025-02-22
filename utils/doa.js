@@ -1,24 +1,31 @@
 // utils/doa.js
-export const fetchDoaList = async () => {
-    try {
-      const response = await fetch('https://api.myquran.com/v2/doa/sumber/harian'); // Correct API endpoint for Doa list
-      if (!response.ok) {
-        throw new Error('Failed to fetch doa list');
-      }
-  
-      const data = await response.json();
-      console.log('Fetched Doas:', data); // Log the fetched data to verify
-  
-      // Check if the data has the correct structure
-      if (!data || !data.data || !Array.isArray(data.data)) {
-        console.error('Invalid or empty data structure:', data);
-        throw new Error('Invalid data structure received');
-      }
-  
-      return data.data; // Assuming "data" contains the list of doas
-    } catch (error) {
-      console.error('Error fetching doa list:', error);
-      throw new Error(error.message || 'An error occurred while fetching the doa list');
-    }
-  };
-  
+export const fetchDoaList = async (category) => {
+  let apiUrl = '';
+
+  switch (category) {
+    case 'doa-harian':
+      apiUrl = 'https://api.myquran.com/v2/doa/sumber/harian';
+      break;
+    case 'doa-haji':
+      apiUrl = 'https://api.myquran.com/v2/doa/sumber/haji';
+      break;
+    case 'doa-quran':
+      apiUrl = 'https://api.myquran.com/v2/doa/sumber/quran';
+      break;
+    default:
+      apiUrl = 'https://api.myquran.com/v2/doa/sumber/harian'; // Default ke doa-harian jika kategori tidak valid
+  }
+
+  console.log("Fetching data from: ", apiUrl);  // Debugging URL
+
+  const response = await fetch(apiUrl);
+  if (!response.ok) {
+    throw new Error('Gagal mengambil data dari API');
+  }
+
+  const data = await response.json();
+  console.log("API Response: ", data);  // Debugging Response
+
+  // Periksa apakah data mengandung field 'data' yang berisi array doas
+  return data.data || []; // Mengembalikan array data atau array kosong jika tidak ada
+};
