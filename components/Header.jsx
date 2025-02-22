@@ -35,7 +35,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="bg-blue-100 p-3 flex justify-between items-center text-rose-50">
+    <header className="bg-green-300 p-3 flex justify-between items-center text-rose-50">
     <div className="flex items-center">
   {/* Logo Section */}
   <Link href="/" className="text-lg font-bold flex items-center">
