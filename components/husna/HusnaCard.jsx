@@ -65,8 +65,8 @@ export default function HusnaCard({ doa }) {
               </button>
             </div>
             <div className="mt-4 text-sm">
-              <p className="text-md font-bold">Menu ini sedang disiapkan</p>
-              <p className="text-lg">Mohon bersabar, kami sedang mempersiapkan informasi lebih lanjut.</p>
+              <p className="text-md font-bold">{latin}</p>
+              <p className="text-lg">{indo}</p>
             </div>
           </div>
         </div>
