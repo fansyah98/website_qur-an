@@ -4,7 +4,7 @@ import JadwalSholatCard from '../components/JadwalSholatCard'
 import Layout from '../components/Layouts'
 import Loading from '../components/Loading'
 import Tracker from '../components/Tracker'
-import Tracker from '../components/Analytics'
+import Tracker from '../components/MyDocument'
 import { coords } from '../constants/location'
 import { indonesianDate, indonesianName } from '../utils/jadwal-sholat'
 
