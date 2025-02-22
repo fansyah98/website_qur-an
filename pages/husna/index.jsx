@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import ErrorCard from '../../components/ErrorCards';
 import Layout from '../../components/Layouts';
 import Loading from '../../components/Loading';
-import DoaCard from '../../components/doa/DoaCard';
+import DoaCard from '../../components/husna/HusnaCard';
+import { fetchDoaList } from '../../utils/husna';
 
-export default function HusnaCard() {
+export default function DoaHarian() {
   const [doas, setDoas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -30,11 +31,11 @@ export default function HusnaCard() {
 
   return (
     <Layout name="Doa Harian">
-      <h1 className="text-3xl font-bold text-green-300 mb-3">Asmaul Husna</h1>
+      <h1 className="text-3xl font-bold text-green-500 mb-3">Doa Harian</h1>
 
       {loading && <Loading message="Memuat doa harian..." />}
       {error && (
-        <ErrorCard message="Gagal memuat data, Halaman Sedang di perbaiki." />
+        <ErrorCard message="Gagal memuat data, silakan periksa koneksi internet Anda lalu refresh halaman ini." />
       )}
 
       {doas && doas.length > 0 ? (
@@ -44,8 +45,9 @@ export default function HusnaCard() {
           ))}
         </div>
       ) : (
-        <p className="text-center text-lg text-gray-500">Tidak ada Asmaul Husna yang ditemukan.</p>
+        <p className="text-center text-lg text-gray-500">Tidak ada doa yang ditemukan.</p>
       )}
     </Layout>
   );
 }
+
