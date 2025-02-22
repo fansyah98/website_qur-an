@@ -9,7 +9,7 @@ class MyDocument extends Document {
           {/* Google Analytics */}
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-FSCXN7LSE4`} // Ganti dengan tracking ID kamu
+            src={`https://www.googletagmanager.com/gtag/js?id=GTM-5R5RD4KD`} // Ganti dengan tracking ID kamu
           ></script>
           <script
             dangerouslySetInnerHTML={{
