@@ -1,4 +1,4 @@
-export default function JadwalSholatCard({ sholat }) {
+export default function Sholat({ sholat }) {
   const { name, time, active } = sholat
 
   const border = active ? 'border border-rose-500' : ''

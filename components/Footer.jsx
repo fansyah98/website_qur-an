@@ -4,8 +4,8 @@ export default function Footer() {
       <footer className="p-3 text-center mb-20">
         <p>
           
-          <a href="" target="_blank">
-            Fansyah Dwi Krisandy
+          <a href="/" target="_blank">
+           Fansyah Dwi Krisandy
           </a>{' '}
           {/* untuk Sweet heartnya */}
         </p>

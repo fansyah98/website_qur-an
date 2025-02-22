@@ -4,28 +4,28 @@ import { useEffect, useState } from 'react'
 
 const navs = [
   {
-    name: 'Sholat',
+    name: 'Home',
     url: '/',
     icon: (
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5 mx-auto"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-5 w-5 mx-auto"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3 12l9-9 9 9M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-7 4h-4"
+      />
+    </svg>
     ),
   },
   {
-    name: "Doa-Doa",
-    url: '/doa',
+    name: "Waktu Sholat",
+    url: '/sholat',
     icon: (
       <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -64,29 +64,10 @@ const navs = [
       </svg>
     ),
   },
+
   {
-    name: 'Berita',
-    url: '/berita',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5 mx-auto"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: 'Asmaul Husna',
-    url: '/husna',
+    name: 'Kalender',
+    url: '/kalender',
     icon: (
       <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -105,26 +86,6 @@ const navs = [
     
     ),
   },
-  {
-    name: 'Kalender',
-    url: '/kalender',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5 mx-auto"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-        />
-      </svg>
-    ),
-  },
 ]
 
 export default function BottomNavigation() {
@@ -133,8 +94,16 @@ export default function BottomNavigation() {
   const firstPath = '/' + router.asPath.split('/')[1]
 
   useEffect(() => {
-    setActive(navs.find(({ url }) => url === firstPath).url)
-  }, [])
+    console.log('firstPath:', firstPath);
+    console.log('navs:', navs);
+    
+    const foundNav = navs.find(({ url }) => url === firstPath);
+    if (foundNav) {
+        setActive(foundNav.url);
+    } else {
+        console.error('No matching nav found for the given path');
+    }
+}, []);
 
   return (
     <div className="fixed bottom-0 inset-x-0 bg-green-300 text-white grid grid-cols-4 text-center">
