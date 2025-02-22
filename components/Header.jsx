@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Link from 'next/link'
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Header() {
   useEffect(() => {
@@ -36,6 +37,7 @@ export default function Header() {
   return (
     <header className="bg-green-300 p-3 flex justify-between items-center text-rose-50">
       <div>
+      <Analytics />
         <Link href="/" className="text-lg font-bold">
           Alqur'an Digital
         </Link>

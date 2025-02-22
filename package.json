@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.15.1",
+    "@vercel/analytics": "^1.5.0",
     "caniuse-lite": "^1.0.30001462",
     "copy-to-clipboard": "^3.3.3",
     "next": "13.2.3",
