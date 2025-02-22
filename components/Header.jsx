@@ -35,15 +35,23 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="bg-green-300 p-3 flex justify-between items-center text-rose-50">
-      <div>
-      <Analytics />
-        <Link href="/" className="text-lg font-bold">
-          Alqur'an Digital
-        </Link>
-      </div>
+    <header className="bg-blue-100 p-3 flex justify-between items-center text-rose-50">
+    <div className="flex items-center">
+  {/* Logo Section */}
+  <Link href="/" className="text-lg font-bold flex items-center">
+    {/* Logo */}
+    <img src="../images/logo.png" alt="Alqur'an Digital Logo" className="h-12 mr-3" /> {/* Increased logo size */}
+    
+    {/* Name */}
+    <span className="text-xl">AlQur'an Digital</span> {/* Adjusted font size for the name */}
+  </Link>
+  
+  <Analytics />
+</div>
 
-      <div>{/* <button className="p-3 rounded-full">Dark</button> */}</div>
-    </header>
+  
+    <div>{/* <button className="p-3 rounded-full">Dark</button> */}</div>
+  </header>
+  
   )
 }

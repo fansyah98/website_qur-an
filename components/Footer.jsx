@@ -5,7 +5,7 @@ export default function Footer() {
         <p>
           
           <a href="/" target="_blank">
-           Fansyah Dwi Krisandy
+          Copyright ©2025 | Fansyah Dwi Krisnady | 2.1
           </a>{' '}
           {/* untuk Sweet heartnya */}
         </p>
