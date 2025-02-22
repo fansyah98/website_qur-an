@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* Content */}
       <Layout name="Home">
-      <h1 className="text-3xl font-bold text-green-500 mb-3">Alqur'an Digital</h1>
+      <h1 className="text-3xl font-bold text-green-500 mb-3">Home</h1>
       <span>Al-Qur'an digital adalah teks Al-Qur'an yang disajikan dalam bentuk elektronik. Al-Qur'an digital dapat diakses secara online maupun offline melalui perangkat elektronik. Al-Qur'an digital dapat digunakan untuk: Membaca ayat Al-Qur'an, Menulis buku dan artikel Islam, Menulis kisah nabi dan rasul, Menghafal Al-Qur'an, Mengamalkan Al-Qur'an</span>
       <span>
       ukum membaca Al-Qur'an di gawai, termasuk HP, menurut para ulama adalah mubah atau boleh. Namun, ada ulama yang berpendapat bahwa hukum membaca Al-Qur'an di HP saat haid tetap haram
