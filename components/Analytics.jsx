@@ -1,14 +1,35 @@
-import React from 'react';
-import { useEffect } from 'react';
-import ReactGA from 'react-ga';
+// pages/_document.js
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-const Analytics = () => {
-  useEffect(() => {
-    ReactGA.initialize('G-FSCXN7LSE4');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html lang="en">
+        <Head>
+          {/* Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-FSCXN7LSE4`} // Ganti dengan tracking ID kamu
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-FSCXN7LSE4); // Ganti dengan tracking ID kamu
+              `,
+            }}
+          ></script>
+          {/* End Google Analytics */}
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
 
-  return null;
-};
-
-export default Analytics;
+export default MyDocument;
