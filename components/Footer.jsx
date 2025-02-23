@@ -1,12 +1,12 @@
 export default function Footer() {
   return (
     <>
-      <footer className="p-3 text-center mb-20">
+      <footer className="p-1 text-center mb-5">
         <p>
           
-          <a href="/" target="_blank">
-          Copyright ©2025 | Fansyah Dwi Krisnady | 2.1
-          </a>{' '}
+         
+          Copyright ©2025 | <a href="/" target="_blank"> Fansyah Dwi Krisnady | 2.1</a>
+          {' '}
           {/* untuk Sweet heartnya */}
         </p>
       </footer>
