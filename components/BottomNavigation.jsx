@@ -66,8 +66,8 @@ const navs = [
   },
 
   {
-    name: 'Kalender',
-    url: '/kalender',
+    name: 'Asmaul Husna',
+    url: '/husna',
     icon: (
       <svg
       xmlns="http://www.w3.org/2000/svg"

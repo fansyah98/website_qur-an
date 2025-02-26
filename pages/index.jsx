@@ -8,7 +8,6 @@ export default function Home() {
     { text: "Daftar AlQur'an", icon: "/images/surat.png", href: "/quran"},
     { text: "Asmaul Husna", icon: "/images/tasbih.png", href: "/husna"},
     { text: "Kumpulan Do'a", icon: "/images/doa-tahlil.png", href: "/doa" },
-    { text: "Kalender", icon: "/images/kalender.png", href: "/kalender" },
     { text: "Berita Islami", icon: "/images/b.png", href: "/berita" },
     { text: "Waktu Sholat", icon: "/images/waktu.png", href: "/sholat" },
   ];
