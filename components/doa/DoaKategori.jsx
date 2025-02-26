@@ -6,25 +6,25 @@ export default function DoaKategori({ handleClickKategori }) {
       {/* Tombol untuk memilih kategori doa */}
       <button
         onClick={() => handleClickKategori("doa-harian")}
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-blue-600"
       >
         Doa Harian
       </button>
       <button
         onClick={() => handleClickKategori("doa-haji")}
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-blue-600"
       >
          Doa AlQur'an
       </button>
       <button
         onClick={() => handleClickKategori("doa-quran")}
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-blue-600"
       >
         Doa Umum
       </button>
       <button
-        onClick={() => handleClickKategori("doa-umum")}
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        onClick={() => handleClickKategori("doa-ibadah")}
+        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-blue-600"
       >
         Doa Umum
       </button>

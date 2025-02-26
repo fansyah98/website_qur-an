@@ -38,7 +38,7 @@ export default function DoaHarian() {
       <div className="grid grid-cols-4 gap-4 mb-4">
         <button onClick={() => setSelectedCategory('doa-harian')} className="p-3 bg-green-400 rounded text-white">Doa Harian</button>
         <button onClick={() => setSelectedCategory('doa-haji')} className="p-3 bg-green-400 rounded text-white">Doa Haji</button>
-        {/* <button onClick={() => setSelectedCategory('doa-umum')} className="p-3 bg-green-400 rounded text-white">Doa Umum</button> */}
+        <button onClick={() => setSelectedCategory('doa-ibadah')} className="p-3 bg-green-400 rounded text-white">Doa Ibadah</button>
         <button onClick={() => setSelectedCategory('doa-quran')} className="p-3 bg-green-400 rounded text-white">Doa AlQur'an</button>
       </div>
 

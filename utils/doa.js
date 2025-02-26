@@ -12,6 +12,9 @@ export const fetchDoaList = async (category) => {
     case 'doa-quran':
       apiUrl = 'https://api.myquran.com/v2/doa/sumber/quran';
       break;
+    case 'doa-ibadah':
+      apiUrl = 'https://api.myquran.com/v2/doa/sumber/ibadah';
+      break;
     default:
       apiUrl = 'https://api.myquran.com/v2/doa/sumber/harian'; // Default ke doa-harian jika kategori tidak valid
   }
